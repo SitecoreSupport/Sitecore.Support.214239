@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
@@ -42,12 +42,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.Microsoft.Extensions.DependencyInjection.9.0.2\lib\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.Microsoft.Extensions.DependencyInjection.Abstractions.9.0.2\lib\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\SC.Newtonsoft.Json.9.0.2\lib\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.ExperienceEditor, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.Sitecore.ExperienceEditor.9.0.2\lib\Sitecore.ExperienceEditor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">
@@ -64,6 +76,18 @@
     </Reference>
     <Reference Include="Sitecore.Speak.Components">
       <HintPath>..\packages\SC.Sitecore.Speak.Components.9.0.2\lib\Sitecore.Speak.Components.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Abstractions, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.Abstractions.1.7.1\lib\Sitecore.XA.Foundation.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.Grid, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.Grid.1.7.1\lib\Sitecore.XA.Foundation.Grid.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.XA.Foundation.SitecoreExtensions, Version=3.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SXA90.Sitecore.XA.Foundation.SitecoreExtensions.1.7.1\lib\Sitecore.XA.Foundation.SitecoreExtensions.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -93,6 +117,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Speak\Components\Models\ListsAndGrids\Grids\GridRenderingModel.cs" />
+    <Compile Include="XA\Foundation\Grid\Commands\ShowGridPropertiesDialog.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\zzz\Sitecore.Support.214239.config" />
@@ -100,6 +125,8 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="sitecore\shell\client\Business Component Library\version 2\Layouts\Renderings\ListsAndGrids\Grids\Grid.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\sc902.sxa1.8.sc.pubxml" />
     <None Include="web.config" />
   </ItemGroup>
   <PropertyGroup>
