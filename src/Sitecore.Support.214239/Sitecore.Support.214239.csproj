@@ -46,24 +46,24 @@
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\SC.Newtonsoft.Json.9.0.1\lib\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\SC.Newtonsoft.Json.9.0.2\lib\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">
-      <HintPath>..\packages\SC.Sitecore.Kernel.9.0.1\lib\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\packages\SC.Sitecore.Kernel.9.0.2\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Mvc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SC.Sitecore.Mvc.9.0.1\lib\Sitecore.Mvc.dll</HintPath>
+    <Reference Include="Sitecore.Mvc">
+      <HintPath>..\packages\SC.Sitecore.Mvc.9.0.2\lib\Sitecore.Mvc.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Speak.Client, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SC.Sitecore.Speak.Client.9.0.1\lib\Sitecore.Speak.Client.dll</HintPath>
+    <Reference Include="Sitecore.Speak.Client">
+      <HintPath>..\packages\SC.Sitecore.Speak.Client.9.0.2\lib\Sitecore.Speak.Client.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Speak.Components, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SC.Sitecore.Speak.Components.9.0.1\lib\Sitecore.Speak.Components.dll</HintPath>
+    <Reference Include="Sitecore.Speak.Components">
+      <HintPath>..\packages\SC.Sitecore.Speak.Components.9.0.2\lib\Sitecore.Speak.Components.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
